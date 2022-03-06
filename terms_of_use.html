@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from www.theodinproject.com/terms_of_use by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Mar 2022 12:45:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Terms of Use | The Odin Project
+    </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"17c82925e3","applicationID":"2418536","transactionName":"d1xcEEpcDg1RS05FQlVHWwdnQwMGUUpOQlNGXkE7V1U9FEdc","queueTime":1,"applicationTime":51,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"17c82925e3",applicationID:"2418536"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https:///")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Odin Project empowers aspiring web developers to learn together for free">
+    <meta property="og:image" content="https://www.theodinproject.com/assets/og-logo-022832d4cefeec1d5266237be260192f5980f9bcbf1c9ca151b358f0ce1fd2df.png">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="hNWd/WNHnFvr7F6Mj5xB/36F9tdPRbegC7/XZTiX8zboW/1ZmVPKwL8WHzWkycMcUf2+dfqYP7HNP8c7JTCR9w==" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="assets/application_stylesheet-4cc3251e66242410826ba3a259925350642c88b816bd05cff7b4638fdeeba3c5.css" />
+    <link rel="stylesheet" media="screen" href="packs/css/application-92b54e7a.css" />
+
+
+    <script src="packs/js/application-0a93d7bb9c45c1db1d7a.js" defer="defer"></script>
+  </head>
+
+  <body class="line-numbers h-full">
+    <div
+  data-controller="mobile-menu"
+  data-mobile-menu-target="container"
+  data-action="custom-events:openMobileMenu@window->mobile-menu#open"
+  class="fixed inset-0 flex z-40 hidden lg:hidden"
+  role="dialog"
+  aria-modal="true"
+>
+
+  <div
+    data-mobile-menu-target="menuOverlay"
+    data-action="click->mobile-menu#close"
+    class="fixed inset-0 bg-gray-600 bg-opacity-75 hidden"
+    aria-hidden="true"
+    data-transition-enter="transition-opacity ease-linear duration-200"
+    data-transition-enter-start="transform opacity-0"
+    data-transition-enter-end="transform opacity-100"
+    data-transition-leave="transition-opacity ease-linear duration-200"
+    data-transition-leave-start="transform opacity-100"
+    data-transition-leave-end="transform opacity-0"
+  >
+  </div>
+
+    <div
+      data-mobile-menu-target="menu"
+      class="odin-dark-mobile-menu relative flex-1 flex flex-col max-w-xs w-full bg-white focus:outline-none hidden"
+      data-transition-enter="transition ease-in-out duration-200 transform"
+      data-transition-enter-start="-translate-x-full"
+      data-transition-enter-end="translate-x-0"
+      data-transition-leave="transition ease-in-out duration-200 transform"
+      data-transition-leave-start="translate-x-0"
+      data-transition-leave-end="-translate-x-full"
+    >
+
+      <div
+        data-mobile-menu-target="closeButton"
+        class="absolute top-2 right-2 -mr-12 pt-3 hidden"
+        data-action="click->mobile-menu#close"
+        data-transition-enter="transition ease-in-out duration-200"
+        data-transition-enter-start="transform opacity-0"
+        data-transition-enter-end="transform opacity-100"
+        data-transition-leave="transition ease-in duration-200"
+        data-transition-leave-start="transform opacity-100"
+        data-transition-leave-end="transform opacity-0"
+      >
+        <button type="button" class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <span class="sr-only">Close sidebar</span>
+          <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex-1 h-0 pt-3 pb-4 overflow-y-auto">
+        <div class="flex-shrink-0 flex items-center px-4">
+          <a href="index.html">
+  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="a3aimpob629qh1gtwb25oj080k1fve0m" class="h-15 w-auto text-gray-800"><title id="a3aimpob629qh1gtwb25oj080k1fve0m">Odin Logo</title>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
+<ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535"></ellipse>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.446 25.7092C19.446 25.2752 19.0891 24.9233 18.6493 24.9233C17.638 24.9233 15.9034 24.9233 14.8922 24.9233C14.4523 24.9233 14.0955 25.2752 14.0955 25.7092C14.0955 26.3856 14.0955 27.3716 14.0955 28.1426C14.0955 28.7935 14.6305 29.3212 15.2902 29.3212C15.6995 29.3212 16.1763 29.3212 16.6578 29.3212C17.3973 29.3212 18.1062 29.0314 18.6295 28.5155C19.1522 28.0001 19.446 27.3004 19.446 26.5712C19.446 26.2585 19.446 25.9621 19.446 25.7092Z" fill="#A78347"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0004 4.5308L43.8517 0L39.0002 18L35.0002 22L35.0004 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.8514 4.5308L0.000132561 0L4.85156 18L8.85156 22L8.8514 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.442 12.7438C35.442 12.7438 28.7539 8.34589 22.0657 8.34589C15.3776 8.34589 8.68945 12.7438 8.68945 12.7438V25.9373L10.473 29.4556C11.7527 24.5929 17.5445 22.5672 21.576 25.5723L22.0657 25.9373L22.5554 25.5723C26.587 22.5672 32.3788 24.5929 33.6585 29.4556L35.442 25.9373V12.7438Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6068 32.5341L14.0398 53.2041L9.12134 49.6858L13.148 34.7331L17.6068 32.5341Z" fill="#D4D4D4"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5243 32.5341L30.0913 53.2041L35.0098 49.6858L30.9831 34.7331L26.5243 32.5341Z" fill="#D5D5D5"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68933 25.9373L5.12231 39.1309L9.58108 47.9267L13.1481 34.7331L8.68933 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4418 25.9373L39.0088 39.1309L34.55 47.9267L30.983 34.7331L35.4418 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6069 32.5341L13.594 54.0837L22.0656 58.4815L30.5373 54.0837L26.5244 32.5341L22.3983 30.4992L22.0656 30.3352L17.6069 32.5341Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6636 33.4137H20.5425C20.5425 33.4137 20.5425 33.9348 20.5425 34.514C20.5425 34.9222 20.707 35.3131 20.9995 35.6016C21.292 35.8901 21.6884 36.0524 22.1022 36.0524C22.1026 36.0524 22.1035 36.0524 22.1039 36.0524C22.5177 36.0524 22.9141 35.8901 23.2066 35.6016C23.4991 35.3131 23.6636 34.9222 23.6636 34.514C23.6636 33.9348 23.6636 33.4137 23.6636 33.4137Z" fill="#353535"></path>
+<path d="M68.808 20.384L67.704 20.456C67.368 20.456 67.056 20.456 66.696 20.432C66.504 20.432 66.288 20.6 66.144 20.6L65.688 20.408L63.36 20.288L63.288 22.256L63.576 22.544L65.04 22.496C65.112 22.496 65.256 22.472 65.424 22.424L65.544 22.304L66.072 22.376L66.216 23.36L66.12 24.896L66.264 26.024L66.144 30.92L66.024 34.304L66.24 34.544L65.88 36.056V37.904L67.152 38.096L67.824 37.976L68.52 37.592L68.328 35.888V31.376L68.04 30.92L68.064 30.896L68.28 29.456L68.256 27.608V27.2C68.256 27.032 68.232 26.816 68.232 26.624C68.208 26.48 68.208 25.88 68.208 25.664L68.256 23.888L68.16 23.36L68.304 22.352H69.048L69.768 22.4L70.008 22.472H71.088L71.16 21.344L71.016 20.336L68.808 20.384ZM73.2638 33.992L73.3118 35.504L73.6478 35.864L73.2638 36.32L73.1918 37.928L74.7038 38.072L75.6878 38.024L75.7118 37.136L75.6398 36.056L75.4958 34.784L75.5198 34.712L75.6398 30.536L77.5118 29.744H77.5358L78.9278 29.432L78.9038 29.864L78.9758 30.2L78.9278 33.896L79.2878 34.28L79.0478 34.496L78.8798 37.184L79.1918 38.024H80.5838L81.4718 37.976L81.4238 36.656L81.2558 36.056L81.2078 32.984L81.1598 28.688L81.1118 28.208L81.0398 27.128L81.1598 24.872L80.9438 24.176L81.1838 23.864L81.2078 22.952V22.976L81.3518 21.608L81.4238 20.408L80.0558 20.36L79.1678 20.336L78.8078 21.032L78.9278 21.992L78.9758 24.152L79.0478 26.336L78.9518 26.984L78.6878 27.104L78.2318 27.32L77.2478 27.752L77.0318 28.016L76.6478 27.872L75.6398 28.232L75.5918 28.256L75.3758 25.928L75.4718 24.344L75.2078 24.128L75.4958 23.672L75.6158 22.208L75.7118 20.48L73.6478 20.216L73.0718 20.6L73.2398 22.088L73.1678 22.568L73.2398 24.152L73.4078 25.64L73.3118 27.992L73.4798 30.704L73.2638 33.992ZM90.8258 22.616L90.8738 21.272L90.8498 20.336L88.4738 20.36L87.5378 20.552L87.2018 20.36H85.8338L84.7058 20.504L84.8258 22.208L85.0898 22.52L84.8258 22.928L84.8498 24.152L84.8258 26.024V27.8L84.7538 28.688L84.9458 31.064L84.8498 31.256L84.8738 32.552V33.104L85.0898 33.392L84.8018 34.016L84.7778 35.12L84.8018 35.384L84.6578 37.016L84.7778 38L86.5778 38.024L86.7698 37.904H87.6098L88.9778 38.048L90.5618 38.072L91.1138 37.832L91.2098 36.944L91.2578 35.744L90.0578 35.72L89.4578 35.912L87.5378 35.936L87.3458 35.888L87.1298 35.84L87.0818 33.512L87.0578 33.464L87.1298 33.248L86.9858 32.552L87.0818 30.08H87.4658L88.9778 30.128L90.1538 30.176L90.2018 29.192L90.3458 28.472L90.0338 27.872L88.8098 27.992L87.8738 28.04L86.9858 27.992L86.9378 27.056L86.6978 26.864L86.9618 26.432L87.0818 25.712V23.336L87.1298 22.736V22.472H87.3458L88.6658 22.52L89.0498 22.448L89.1218 22.424L89.6978 22.616H90.8258ZM102.331 20.312L102.115 20.336H101.227L101.179 20.504L101.035 21.224L100.939 21.368L99.6429 24.608L99.7629 24.872L99.3309 25.184L98.0349 28.328L97.8429 28.448L97.8909 29.96L98.4669 31.184L99.3309 33.224L100.051 34.712H100.315L100.243 35.12L101.083 37.208L101.107 38L103.291 38.024L103.339 37.76L103.627 36.992L104.923 33.92L105.475 32.768L105.499 32.384L105.691 32.144L106.867 29.768L106.939 28.448L106.123 26.672L105.475 25.232H105.235L105.115 24.584L103.891 21.584L103.411 20.264L102.331 20.312ZM102.379 34.952L101.323 32.192L100.843 31.208L100.363 30.872L100.603 30.584L100.387 29.888L100.075 29.096L100.051 28.808L100.843 26.744L100.675 26.36L101.011 26.264L102.331 22.784L102.475 23.24L103.027 24.704L103.459 24.968L103.243 25.256L104.179 27.68L104.467 28.496L104.659 29.096L103.483 31.976L103.507 32.408H103.531L103.243 32.696L102.475 35.216L102.379 34.952ZM113.227 35.72L114.067 34.016L116.539 30.224L116.971 29.504L116.947 27.752L116.515 27.2L116.539 27.248L114.715 24.824L114.091 23.72L113.251 22.88L112.987 22.088L111.499 20.048L110.227 20.432L109.195 20.744L109.219 21.632L109.291 22.88L109.531 23.192L109.291 23.648L109.315 29.936L109.459 30.872L109.315 36.248V36.224L109.267 37.832L110.827 38.048L111.619 38.264L113.227 35.72ZM111.451 26.744L111.379 23.264L111.523 23.432L113.899 27.248L114.379 27.632L114.475 28.208L114.907 28.856L114.475 29.552L113.683 30.872L112.675 32.816L112.867 33.032L112.435 33.248L111.379 34.952L111.355 35L111.379 33.704L111.475 28.952L111.091 27.824L111.451 26.744ZM119.431 27.56L119.359 28.88L119.287 29.624V34.112V34.976L119.575 35.384L119.287 35.864L118.951 38L120.055 38.024L120.559 38.048L121.615 37.712L121.639 36.824L121.591 36.368L121.543 36.008V29.36L121.279 29.192L121.495 28.688L121.447 28.088L121.351 27.152L121.423 25.928L121.495 22.784L121.615 22.184L121.735 20.432L120.175 20.336L119.047 20.408L119.167 21.608L119.383 21.728L119.191 22.16L119.263 26.96L119.431 27.56ZM133.115 35.888V35.12L132.947 29.864L132.683 29.072L132.875 28.064L133.115 22.16L133.163 20.528L132.179 20.36L130.787 20.384V22.304L131.027 22.64L130.787 23.384V25.448L129.995 24.152L129.803 24.056L129.203 23.096L127.043 20.12L125.147 20.648V21.896L125.243 24.392L125.339 25.76L125.243 30.752L125.459 31.232L125.267 31.928L125.123 35.336V35.744L125.195 35.96L125.027 37.88L126.059 38.072L127.475 38.024L127.523 36.488L127.451 36.152L127.475 33.656L127.259 32.744L127.379 31.88L127.427 26.408L127.139 26.096L127.115 26.048L127.451 25.184V23.888L128.075 24.752L129.059 26.12L129.755 26.96L130.091 27.488L130.427 27.848L130.811 28.496L130.835 30.992L130.907 31.448L130.835 31.568L130.811 33.872L130.835 36.152L130.811 38.024L131.627 38.072L132.947 38.048L133.259 37.232L133.115 35.888ZM147.393 28.76L148.161 28.016L148.905 27.104L148.953 25.448L146.457 22.808L145.953 22.64L145.857 22.232L143.697 20L142.929 20.288L141.777 20.792L141.825 22.4L141.945 23.384V27.32L141.897 27.44L141.873 33.44L142.161 33.752L141.945 34.496L141.681 37.928L143.073 38.072L144.273 38L144.129 35.024L143.745 34.688L144.129 34.112L144.081 32.456L144.297 32.216L145.905 30.392L147.393 28.76ZM144.105 27.128L143.841 26.648L144.081 25.904L144.057 24.752L144.081 23.048L145.473 24.608L145.689 24.752L145.857 25.088L146.889 26.24L146.505 26.792L146.265 27.392L146.001 27.32L144.801 28.736L144.105 29.48V27.128ZM153.466 30.608L154.426 32.552L154.642 33.104L155.53 34.784L155.818 34.928L155.794 35.336L156.634 37.256L157.21 38.192L159.154 37.112L159.178 36.416L158.386 35.576L157.954 34.664V34.688L157.618 33.992L157.474 33.92V33.608L156.514 31.976C156.346 31.736 156.202 31.616 156.01 31.4V30.992C155.866 30.704 155.578 30.296 155.41 29.96L156.082 29.048L156.49 28.544L157.258 27.632L158.362 26.288L158.53 24.848L157.378 23.792C157.354 23.792 156.97 23.912 156.946 23.888L156.802 23.288L152.986 19.976L151.09 20.744L151.186 22.808L151.306 27.392L151.114 27.872L151.162 29.12L151.258 31.928V32.864L151.474 33.176L151.114 34.112L150.97 37.928L152.554 38.072L153.514 37.688L153.49 35.696L153.418 35.48L153.346 33.08L153.322 30.464L153.466 30.608ZM153.37 28.352L153.274 26.216L153.226 25.952L153.178 25.808L153.082 25.376L153.274 24.92V24.68L153.322 22.832L155.53 25.016L155.698 25.136L156.178 25.736L155.914 26.072C155.602 26.504 155.026 27.248 154.69 27.656L153.49 29.144L153.322 29.24L153.37 28.352ZM164.323 20.312L164.107 20.336H163.219L163.171 20.504L163.027 21.224L162.931 21.368L161.635 24.608L161.755 24.872L161.323 25.184L160.027 28.328L159.835 28.448L159.883 29.96L160.459 31.184L161.323 33.224L162.043 34.712H162.307L162.235 35.12L163.075 37.208L163.099 38L165.283 38.024L165.331 37.76L165.619 36.992L166.915 33.92L167.467 32.768L167.491 32.384L167.683 32.144L168.859 29.768L168.931 28.448L168.115 26.672L167.467 25.232H167.227L167.107 24.584L165.883 21.584L165.403 20.264L164.323 20.312ZM164.371 34.952L163.315 32.192L162.835 31.208L162.355 30.872L162.595 30.584L162.379 29.888L162.067 29.096L162.043 28.808L162.835 26.744L162.667 26.36L163.003 26.264L164.323 22.784L164.467 23.24L165.019 24.704L165.451 24.968L165.235 25.256L166.171 27.68L166.459 28.496L166.651 29.096L165.475 31.976L165.499 32.408H165.523L165.235 32.696L164.467 35.216L164.371 34.952ZM171.71 27.608L171.59 28.928L171.614 30.416L171.638 30.752V31.688L171.542 34.304L171.59 34.52L171.23 35.024L170.174 35.72L169.118 36.152V37.4L170.438 38.384L172.214 36.944L172.19 36.464L172.838 36.368L173.606 35.696L173.99 35.024L173.702 30.896L173.51 30.176L173.774 29.984L173.678 23.288L173.966 21.176L173.654 20.336L171.374 20.384V21.728L171.806 21.968L171.494 22.352L171.566 26.408L171.71 27.608ZM183.502 22.616L183.55 21.272L183.526 20.336L181.15 20.36L180.214 20.552L179.878 20.36H178.51L177.382 20.504L177.502 22.208L177.766 22.52L177.502 22.928L177.526 24.152L177.502 26.024V27.8L177.43 28.688L177.622 31.064L177.526 31.256L177.55 32.552V33.104L177.766 33.392L177.478 34.016L177.454 35.12L177.478 35.384L177.334 37.016L177.454 38L179.254 38.024L179.446 37.904H180.286L181.654 38.048L183.238 38.072L183.79 37.832L183.886 36.944L183.934 35.744L182.734 35.72L182.134 35.912L180.214 35.936L180.022 35.888L179.806 35.84L179.758 33.512L179.734 33.464L179.806 33.248L179.662 32.552L179.758 30.08H180.142L181.654 30.128L182.83 30.176L182.878 29.192L183.022 28.472L182.71 27.872L181.486 27.992L180.55 28.04L179.662 27.992L179.614 27.056L179.374 26.864L179.638 26.432L179.758 25.712V23.336L179.806 22.736V22.472H180.022L181.342 22.52L181.726 22.448L181.798 22.424L182.374 22.616H183.502ZM185.362 30.896L186.226 32.456L187.33 33.488L187.138 33.92L188.962 36.752L189.01 37.04L189.826 38.312L190.642 37.784L191.89 36.752L191.338 35.864L190.09 34.232L188.986 32.36L188.098 30.992L187.882 30.512L187.546 30.176L187.306 29.72L186.946 29.024L187.258 28.448L187.714 27.632L188.506 26.384L189.946 24.248L190.066 23.6L190.474 23.336L191.146 22.4L191.818 21.2L190.018 20L189.178 20.984L189.154 21.176L187.81 23.384V23.48L187.21 24.44V25.016L186.346 25.856L184.786 28.496L184.81 30.032L185.362 30.896ZM198.12 20.384L197.016 20.456C196.68 20.456 196.368 20.456 196.008 20.432C195.816 20.432 195.6 20.6 195.456 20.6L195 20.408L192.672 20.288L192.6 22.256L192.888 22.544L194.352 22.496C194.424 22.496 194.568 22.472 194.736 22.424L194.856 22.304L195.384 22.376L195.528 23.36L195.432 24.896L195.576 26.024L195.456 30.92L195.336 34.304L195.552 34.544L195.192 36.056V37.904L196.464 38.096L197.136 37.976L197.832 37.592L197.64 35.888V31.376L197.352 30.92L197.376 30.896L197.592 29.456L197.568 27.608V27.2C197.568 27.032 197.544 26.816 197.544 26.624C197.52 26.48 197.52 25.88 197.52 25.664L197.568 23.888L197.472 23.36L197.616 22.352H198.36L199.08 22.4L199.32 22.472H200.4L200.472 21.344L200.328 20.336L198.12 20.384Z" fill="currentColor"></path>
+</svg>
+
+</a>
+        </div>
+        <nav aria-label="Sidebar" class="mt-3">
+          <div class="px-2 space-y-1">
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-home" href="index.html">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" role="img" aria-labelledby="alw7mwotm99fbrga7ohfq9eitgdrqs5q" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="alw7mwotm99fbrga7ohfq9eitgdrqs5q">Home icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+</svg>
+
+    Home
+</a>
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-all-paths" href="paths.html">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="img" aria-labelledby="a6ft54g0bcvj17veo2h69s4540w1w5rf" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="a6ft54g0bcvj17veo2h69s4540w1w5rf">All Paths icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+</svg>
+
+    All Paths
+</a>
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-about" href="about.html">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" role="img" aria-labelledby="a1xwad7dd3qwoysv5h3nxec4d0pwa567" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="a1xwad7dd3qwoysv5h3nxec4d0pwa567">About icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+</svg>
+
+    About
+</a>
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-community" href="https://discord.gg/fbFCkYabZB">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" role="img" aria-labelledby="aqci40kq1zbyy8fh0vfr9s2cwc7z0lmw" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="aqci40kq1zbyy8fh0vfr9s2cwc7z0lmw">Community icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+</svg>
+
+    Community
+</a>
+          </div>
+          <hr class="border-t border-gray-200 my-4" aria-hidden="true">
+          <div class="px-2 space-y-1">
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-signup" href="sign_up.html">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-labelledby="a9bes2wjyod0myf55ein894ruidtj677" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="a9bes2wjyod0myf55ein894ruidtj677">Get started icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+</svg>
+
+    Get started
+</a>
+                 <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium" rel="nofollow" data-method="put" href="themes4965.html?theme=dark">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="overflow:visible" role="img" aria-labelledby="abfdute5jc3tu37210v183iufd854q95" class="odin-dark-nav-item text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="abfdute5jc3tu37210v183iufd854q95">Dark Mode icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+</svg>
+
+    Dark Mode
+</a>
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-login" href="login.html">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" role="img" aria-labelledby="aafnv82pbxtlmkvoc3iec66m9t8pnchv" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="aafnv82pbxtlmkvoc3iec66m9t8pnchv">Log in icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
+</svg>
+
+    Log in
+</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 w-14" aria-hidden="true">
+      <!-- Force sidebar to shrink to fit close icon -->
+    </div>
+  </div>
+</div>
+
+
+<nav class="mb-8 sm:mb-16 md:mb-20 lg:mb-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3">
+    <div class="flex justify-between">
+      <div class="flex">
+        <div class="flex-shrink-0 flex items-center">
+          <a class="logo" href="index.html">
+            <img alt="Odin Logo" class="block lg:hidden h-15 w-auto text-red-500" src="assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg" />
+</a>
+          <a href="index.html">
+  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="aary639d084x3gv8z3qs5v4rgepdohmr" class="hidden lg:block h-15 w-auto text-gray-800"><title id="aary639d084x3gv8z3qs5v4rgepdohmr">Odin Logo</title>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
+<ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535"></ellipse>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.446 25.7092C19.446 25.2752 19.0891 24.9233 18.6493 24.9233C17.638 24.9233 15.9034 24.9233 14.8922 24.9233C14.4523 24.9233 14.0955 25.2752 14.0955 25.7092C14.0955 26.3856 14.0955 27.3716 14.0955 28.1426C14.0955 28.7935 14.6305 29.3212 15.2902 29.3212C15.6995 29.3212 16.1763 29.3212 16.6578 29.3212C17.3973 29.3212 18.1062 29.0314 18.6295 28.5155C19.1522 28.0001 19.446 27.3004 19.446 26.5712C19.446 26.2585 19.446 25.9621 19.446 25.7092Z" fill="#A78347"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0004 4.5308L43.8517 0L39.0002 18L35.0002 22L35.0004 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.8514 4.5308L0.000132561 0L4.85156 18L8.85156 22L8.8514 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.442 12.7438C35.442 12.7438 28.7539 8.34589 22.0657 8.34589C15.3776 8.34589 8.68945 12.7438 8.68945 12.7438V25.9373L10.473 29.4556C11.7527 24.5929 17.5445 22.5672 21.576 25.5723L22.0657 25.9373L22.5554 25.5723C26.587 22.5672 32.3788 24.5929 33.6585 29.4556L35.442 25.9373V12.7438Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6068 32.5341L14.0398 53.2041L9.12134 49.6858L13.148 34.7331L17.6068 32.5341Z" fill="#D4D4D4"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5243 32.5341L30.0913 53.2041L35.0098 49.6858L30.9831 34.7331L26.5243 32.5341Z" fill="#D5D5D5"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68933 25.9373L5.12231 39.1309L9.58108 47.9267L13.1481 34.7331L8.68933 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4418 25.9373L39.0088 39.1309L34.55 47.9267L30.983 34.7331L35.4418 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6069 32.5341L13.594 54.0837L22.0656 58.4815L30.5373 54.0837L26.5244 32.5341L22.3983 30.4992L22.0656 30.3352L17.6069 32.5341Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6636 33.4137H20.5425C20.5425 33.4137 20.5425 33.9348 20.5425 34.514C20.5425 34.9222 20.707 35.3131 20.9995 35.6016C21.292 35.8901 21.6884 36.0524 22.1022 36.0524C22.1026 36.0524 22.1035 36.0524 22.1039 36.0524C22.5177 36.0524 22.9141 35.8901 23.2066 35.6016C23.4991 35.3131 23.6636 34.9222 23.6636 34.514C23.6636 33.9348 23.6636 33.4137 23.6636 33.4137Z" fill="#353535"></path>
+<path d="M68.808 20.384L67.704 20.456C67.368 20.456 67.056 20.456 66.696 20.432C66.504 20.432 66.288 20.6 66.144 20.6L65.688 20.408L63.36 20.288L63.288 22.256L63.576 22.544L65.04 22.496C65.112 22.496 65.256 22.472 65.424 22.424L65.544 22.304L66.072 22.376L66.216 23.36L66.12 24.896L66.264 26.024L66.144 30.92L66.024 34.304L66.24 34.544L65.88 36.056V37.904L67.152 38.096L67.824 37.976L68.52 37.592L68.328 35.888V31.376L68.04 30.92L68.064 30.896L68.28 29.456L68.256 27.608V27.2C68.256 27.032 68.232 26.816 68.232 26.624C68.208 26.48 68.208 25.88 68.208 25.664L68.256 23.888L68.16 23.36L68.304 22.352H69.048L69.768 22.4L70.008 22.472H71.088L71.16 21.344L71.016 20.336L68.808 20.384ZM73.2638 33.992L73.3118 35.504L73.6478 35.864L73.2638 36.32L73.1918 37.928L74.7038 38.072L75.6878 38.024L75.7118 37.136L75.6398 36.056L75.4958 34.784L75.5198 34.712L75.6398 30.536L77.5118 29.744H77.5358L78.9278 29.432L78.9038 29.864L78.9758 30.2L78.9278 33.896L79.2878 34.28L79.0478 34.496L78.8798 37.184L79.1918 38.024H80.5838L81.4718 37.976L81.4238 36.656L81.2558 36.056L81.2078 32.984L81.1598 28.688L81.1118 28.208L81.0398 27.128L81.1598 24.872L80.9438 24.176L81.1838 23.864L81.2078 22.952V22.976L81.3518 21.608L81.4238 20.408L80.0558 20.36L79.1678 20.336L78.8078 21.032L78.9278 21.992L78.9758 24.152L79.0478 26.336L78.9518 26.984L78.6878 27.104L78.2318 27.32L77.2478 27.752L77.0318 28.016L76.6478 27.872L75.6398 28.232L75.5918 28.256L75.3758 25.928L75.4718 24.344L75.2078 24.128L75.4958 23.672L75.6158 22.208L75.7118 20.48L73.6478 20.216L73.0718 20.6L73.2398 22.088L73.1678 22.568L73.2398 24.152L73.4078 25.64L73.3118 27.992L73.4798 30.704L73.2638 33.992ZM90.8258 22.616L90.8738 21.272L90.8498 20.336L88.4738 20.36L87.5378 20.552L87.2018 20.36H85.8338L84.7058 20.504L84.8258 22.208L85.0898 22.52L84.8258 22.928L84.8498 24.152L84.8258 26.024V27.8L84.7538 28.688L84.9458 31.064L84.8498 31.256L84.8738 32.552V33.104L85.0898 33.392L84.8018 34.016L84.7778 35.12L84.8018 35.384L84.6578 37.016L84.7778 38L86.5778 38.024L86.7698 37.904H87.6098L88.9778 38.048L90.5618 38.072L91.1138 37.832L91.2098 36.944L91.2578 35.744L90.0578 35.72L89.4578 35.912L87.5378 35.936L87.3458 35.888L87.1298 35.84L87.0818 33.512L87.0578 33.464L87.1298 33.248L86.9858 32.552L87.0818 30.08H87.4658L88.9778 30.128L90.1538 30.176L90.2018 29.192L90.3458 28.472L90.0338 27.872L88.8098 27.992L87.8738 28.04L86.9858 27.992L86.9378 27.056L86.6978 26.864L86.9618 26.432L87.0818 25.712V23.336L87.1298 22.736V22.472H87.3458L88.6658 22.52L89.0498 22.448L89.1218 22.424L89.6978 22.616H90.8258ZM102.331 20.312L102.115 20.336H101.227L101.179 20.504L101.035 21.224L100.939 21.368L99.6429 24.608L99.7629 24.872L99.3309 25.184L98.0349 28.328L97.8429 28.448L97.8909 29.96L98.4669 31.184L99.3309 33.224L100.051 34.712H100.315L100.243 35.12L101.083 37.208L101.107 38L103.291 38.024L103.339 37.76L103.627 36.992L104.923 33.92L105.475 32.768L105.499 32.384L105.691 32.144L106.867 29.768L106.939 28.448L106.123 26.672L105.475 25.232H105.235L105.115 24.584L103.891 21.584L103.411 20.264L102.331 20.312ZM102.379 34.952L101.323 32.192L100.843 31.208L100.363 30.872L100.603 30.584L100.387 29.888L100.075 29.096L100.051 28.808L100.843 26.744L100.675 26.36L101.011 26.264L102.331 22.784L102.475 23.24L103.027 24.704L103.459 24.968L103.243 25.256L104.179 27.68L104.467 28.496L104.659 29.096L103.483 31.976L103.507 32.408H103.531L103.243 32.696L102.475 35.216L102.379 34.952ZM113.227 35.72L114.067 34.016L116.539 30.224L116.971 29.504L116.947 27.752L116.515 27.2L116.539 27.248L114.715 24.824L114.091 23.72L113.251 22.88L112.987 22.088L111.499 20.048L110.227 20.432L109.195 20.744L109.219 21.632L109.291 22.88L109.531 23.192L109.291 23.648L109.315 29.936L109.459 30.872L109.315 36.248V36.224L109.267 37.832L110.827 38.048L111.619 38.264L113.227 35.72ZM111.451 26.744L111.379 23.264L111.523 23.432L113.899 27.248L114.379 27.632L114.475 28.208L114.907 28.856L114.475 29.552L113.683 30.872L112.675 32.816L112.867 33.032L112.435 33.248L111.379 34.952L111.355 35L111.379 33.704L111.475 28.952L111.091 27.824L111.451 26.744ZM119.431 27.56L119.359 28.88L119.287 29.624V34.112V34.976L119.575 35.384L119.287 35.864L118.951 38L120.055 38.024L120.559 38.048L121.615 37.712L121.639 36.824L121.591 36.368L121.543 36.008V29.36L121.279 29.192L121.495 28.688L121.447 28.088L121.351 27.152L121.423 25.928L121.495 22.784L121.615 22.184L121.735 20.432L120.175 20.336L119.047 20.408L119.167 21.608L119.383 21.728L119.191 22.16L119.263 26.96L119.431 27.56ZM133.115 35.888V35.12L132.947 29.864L132.683 29.072L132.875 28.064L133.115 22.16L133.163 20.528L132.179 20.36L130.787 20.384V22.304L131.027 22.64L130.787 23.384V25.448L129.995 24.152L129.803 24.056L129.203 23.096L127.043 20.12L125.147 20.648V21.896L125.243 24.392L125.339 25.76L125.243 30.752L125.459 31.232L125.267 31.928L125.123 35.336V35.744L125.195 35.96L125.027 37.88L126.059 38.072L127.475 38.024L127.523 36.488L127.451 36.152L127.475 33.656L127.259 32.744L127.379 31.88L127.427 26.408L127.139 26.096L127.115 26.048L127.451 25.184V23.888L128.075 24.752L129.059 26.12L129.755 26.96L130.091 27.488L130.427 27.848L130.811 28.496L130.835 30.992L130.907 31.448L130.835 31.568L130.811 33.872L130.835 36.152L130.811 38.024L131.627 38.072L132.947 38.048L133.259 37.232L133.115 35.888ZM147.393 28.76L148.161 28.016L148.905 27.104L148.953 25.448L146.457 22.808L145.953 22.64L145.857 22.232L143.697 20L142.929 20.288L141.777 20.792L141.825 22.4L141.945 23.384V27.32L141.897 27.44L141.873 33.44L142.161 33.752L141.945 34.496L141.681 37.928L143.073 38.072L144.273 38L144.129 35.024L143.745 34.688L144.129 34.112L144.081 32.456L144.297 32.216L145.905 30.392L147.393 28.76ZM144.105 27.128L143.841 26.648L144.081 25.904L144.057 24.752L144.081 23.048L145.473 24.608L145.689 24.752L145.857 25.088L146.889 26.24L146.505 26.792L146.265 27.392L146.001 27.32L144.801 28.736L144.105 29.48V27.128ZM153.466 30.608L154.426 32.552L154.642 33.104L155.53 34.784L155.818 34.928L155.794 35.336L156.634 37.256L157.21 38.192L159.154 37.112L159.178 36.416L158.386 35.576L157.954 34.664V34.688L157.618 33.992L157.474 33.92V33.608L156.514 31.976C156.346 31.736 156.202 31.616 156.01 31.4V30.992C155.866 30.704 155.578 30.296 155.41 29.96L156.082 29.048L156.49 28.544L157.258 27.632L158.362 26.288L158.53 24.848L157.378 23.792C157.354 23.792 156.97 23.912 156.946 23.888L156.802 23.288L152.986 19.976L151.09 20.744L151.186 22.808L151.306 27.392L151.114 27.872L151.162 29.12L151.258 31.928V32.864L151.474 33.176L151.114 34.112L150.97 37.928L152.554 38.072L153.514 37.688L153.49 35.696L153.418 35.48L153.346 33.08L153.322 30.464L153.466 30.608ZM153.37 28.352L153.274 26.216L153.226 25.952L153.178 25.808L153.082 25.376L153.274 24.92V24.68L153.322 22.832L155.53 25.016L155.698 25.136L156.178 25.736L155.914 26.072C155.602 26.504 155.026 27.248 154.69 27.656L153.49 29.144L153.322 29.24L153.37 28.352ZM164.323 20.312L164.107 20.336H163.219L163.171 20.504L163.027 21.224L162.931 21.368L161.635 24.608L161.755 24.872L161.323 25.184L160.027 28.328L159.835 28.448L159.883 29.96L160.459 31.184L161.323 33.224L162.043 34.712H162.307L162.235 35.12L163.075 37.208L163.099 38L165.283 38.024L165.331 37.76L165.619 36.992L166.915 33.92L167.467 32.768L167.491 32.384L167.683 32.144L168.859 29.768L168.931 28.448L168.115 26.672L167.467 25.232H167.227L167.107 24.584L165.883 21.584L165.403 20.264L164.323 20.312ZM164.371 34.952L163.315 32.192L162.835 31.208L162.355 30.872L162.595 30.584L162.379 29.888L162.067 29.096L162.043 28.808L162.835 26.744L162.667 26.36L163.003 26.264L164.323 22.784L164.467 23.24L165.019 24.704L165.451 24.968L165.235 25.256L166.171 27.68L166.459 28.496L166.651 29.096L165.475 31.976L165.499 32.408H165.523L165.235 32.696L164.467 35.216L164.371 34.952ZM171.71 27.608L171.59 28.928L171.614 30.416L171.638 30.752V31.688L171.542 34.304L171.59 34.52L171.23 35.024L170.174 35.72L169.118 36.152V37.4L170.438 38.384L172.214 36.944L172.19 36.464L172.838 36.368L173.606 35.696L173.99 35.024L173.702 30.896L173.51 30.176L173.774 29.984L173.678 23.288L173.966 21.176L173.654 20.336L171.374 20.384V21.728L171.806 21.968L171.494 22.352L171.566 26.408L171.71 27.608ZM183.502 22.616L183.55 21.272L183.526 20.336L181.15 20.36L180.214 20.552L179.878 20.36H178.51L177.382 20.504L177.502 22.208L177.766 22.52L177.502 22.928L177.526 24.152L177.502 26.024V27.8L177.43 28.688L177.622 31.064L177.526 31.256L177.55 32.552V33.104L177.766 33.392L177.478 34.016L177.454 35.12L177.478 35.384L177.334 37.016L177.454 38L179.254 38.024L179.446 37.904H180.286L181.654 38.048L183.238 38.072L183.79 37.832L183.886 36.944L183.934 35.744L182.734 35.72L182.134 35.912L180.214 35.936L180.022 35.888L179.806 35.84L179.758 33.512L179.734 33.464L179.806 33.248L179.662 32.552L179.758 30.08H180.142L181.654 30.128L182.83 30.176L182.878 29.192L183.022 28.472L182.71 27.872L181.486 27.992L180.55 28.04L179.662 27.992L179.614 27.056L179.374 26.864L179.638 26.432L179.758 25.712V23.336L179.806 22.736V22.472H180.022L181.342 22.52L181.726 22.448L181.798 22.424L182.374 22.616H183.502ZM185.362 30.896L186.226 32.456L187.33 33.488L187.138 33.92L188.962 36.752L189.01 37.04L189.826 38.312L190.642 37.784L191.89 36.752L191.338 35.864L190.09 34.232L188.986 32.36L188.098 30.992L187.882 30.512L187.546 30.176L187.306 29.72L186.946 29.024L187.258 28.448L187.714 27.632L188.506 26.384L189.946 24.248L190.066 23.6L190.474 23.336L191.146 22.4L191.818 21.2L190.018 20L189.178 20.984L189.154 21.176L187.81 23.384V23.48L187.21 24.44V25.016L186.346 25.856L184.786 28.496L184.81 30.032L185.362 30.896ZM198.12 20.384L197.016 20.456C196.68 20.456 196.368 20.456 196.008 20.432C195.816 20.432 195.6 20.6 195.456 20.6L195 20.408L192.672 20.288L192.6 22.256L192.888 22.544L194.352 22.496C194.424 22.496 194.568 22.472 194.736 22.424L194.856 22.304L195.384 22.376L195.528 23.36L195.432 24.896L195.576 26.024L195.456 30.92L195.336 34.304L195.552 34.544L195.192 36.056V37.904L196.464 38.096L197.136 37.976L197.832 37.592L197.64 35.888V31.376L197.352 30.92L197.376 30.896L197.592 29.456L197.568 27.608V27.2C197.568 27.032 197.544 26.816 197.544 26.624C197.52 26.48 197.52 25.88 197.52 25.664L197.568 23.888L197.472 23.36L197.616 22.352H198.36L199.08 22.4L199.32 22.472H200.4L200.472 21.344L200.328 20.336L198.12 20.384Z" fill="currentColor"></path>
+</svg>
+
+</a>
+        </div>
+
+      </div>
+      <div class="hidden md:ml-6 md:flex sm:items-center">
+          <div class="hidden md:ml-6 md:flex sm:space-x-8">
+            <a class="odin-dark-nav-item border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-all-paths" href="paths.html">All Paths</a>
+
+            <a class="odin-dark-nav-item border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-about" href="about.html">About</a>
+
+            <a class="odin-dark-nav-item border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-community" href="https://discord.gg/fbFCkYabZB">Community</a>
+
+            <a class="odin-dark-nav-item border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-signup" href="sign_up.html">Get Started</a>
+
+            <a class="odin-dark-nav-item border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-login" href="login.html">Log In</a>
+
+            <a class="odin-dark-nav-item text-gray-700 group flex items-center px-3 py-2 text-sm" rel="nofollow" data-method="put" href="themes4965.html?theme=dark">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="overflow:visible" role="img" aria-labelledby="acskaijim0glgjxhytipgp9m0s31lqb9" class="odin-dark-nav-item mr-3 h-5 w-5 text-gray-500 group-hover:text-gray-700"><title id="acskaijim0glgjxhytipgp9m0s31lqb9">theme icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+</svg>
+
+</a>
+        </div>
+
+      </div>
+
+      <div class="-mr-2 flex items-center md:hidden">
+        <button type="button" data-controller="custom-events" data-action="custom-events#emit" data-custom-events-event-name-value="openMobileMenu" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold-500" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open mobile menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" data-mobile-menu-target="openButton" role="img" aria-labelledby="aabwxaq2volhwcf5f4kedu5jdwwbd2jj" class="block h-6 w-6"><title id="aabwxaq2volhwcf5f4kedu5jdwwbd2jj">Open mobile menu button</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+</div>
+
+
+
+
+
+
+    
+
+<div class="gradient">
+  <div class="container terms_of_use">
+    <div class="card-main">
+      <h1 id="terms-of-use">Terms of Use</h1>
+
+<p>This document should be read in conjunction with Thinkful’s <a href="https://www.thinkful.com/privacy-policy/">privacy policy</a> and <a href="https://www.thinkful.com/terms-of-service/">terms of service</a>.</p>
+
+<h3 id="preamble">Preamble</h3>
+
+<p>Welcome to The Odin Project, a service provided by The Odin Project (“The Odin Project”, “The Project”, “Odin Project”,  “we” “our”, or “us”).</p>
+
+<p>These Terms of Use govern your use of theodinproject.com (the “Website”) and all related widgets, tools, applications, data, software, APIs (which may also be subject to separate API Terms of Use) and other services provided by us (the “Services”).</p>
+
+<p>These Terms of Use constitute a legally binding agreement (the “Agreement”) between you and us in relation to your use of the Website and Services (together, the “Platform”).</p>
+
+<h3 id="acceptance-of-terms-of-use">Acceptance of Terms of Use</h3>
+
+<p>Please read these Terms of Use very carefully. If you do not agree to any of the provisions set out in this document, you should not use the Website or any of the Services. By accessing or using the Platform, registering an account, or by viewing, accessing, uploading or downloading any information or content from or to the Platform, you represent and warrant that you have read and understood the Terms of Use, will abide by them, and that you are either 18 years of age or more, or you are 13 years of age or more and have your parent(s)’ or legal guardian(s)’ permission to use the Platform.</p>
+
+<h3 id="changes-to-terms-of-use">Changes to Terms of Use</h3>
+
+<p>We reserve the right to change, alter, replace or otherwise modify these Terms of Use at any time. We recommend that you periodically check this Site for changes.</p>
+
+<h3 id="description-of-the-platform">Description of the Platform</h3>
+
+<p>The Platform is a learning service which displays content from third-party sources and allows registered users to participate in discussions. Registered users of the Platform may contribute content, data or information (“Content”). The Platform also enables registered users to interact with one another and to contribute to discussions.</p>
+
+<p>We may, from time to time, release new tools and resources on the Website, release new versions of our Website, or introduce other services and/or features for the Platform. Any new services and features will be subject to these Terms of Use as well as any additional terms of use that we may release for those specific services or features.</p>
+
+<h3 id="your-odin-project-account">Your Odin Project Account</h3>
+
+<p>You are not obliged to register to use the Platform. However, access to certain Services is only available to registered users.</p>
+
+<p>When you register to use the Platform, you will provide us with your email address, a username and password for your account. You must ensure that the email address that you provide is, and remains, valid.</p>
+
+<p>You are solely responsible for maintaining the confidentiality and security of your username and password, and you will remain responsible for all use of your username and password, and all activity emanating from your account, whether or not such activity was authorized by you.</p>
+
+<p>If your username or password is lost or stolen, or if you believe that your account has been accessed by unauthorized third parties, you are advised to notify The Odin Project in writing, and should change your password at the earliest possible opportunity.</p>
+
+<p>We reserve the right to disallow, cancel, remove or reassign certain usernames and permalinks in appropriate circumstances, as determined by us in our sole discretion, and may, with or without prior notice, suspend or terminate your account if activities occur on that account which, in our sole discretion, would or might constitute a violation of these Terms of Use, or an infringement or violation of the rights of any third party, or of any applicable laws or regulations.</p>
+
+<p>You may terminate your account at any time as described in the Termination section below.</p>
+
+<h3 id="your-use-of-the-platform">Your Use of the Platform</h3>
+
+<p>Subject to your strict compliance with these Terms of Use, The Odin Project grants you a limited, personal, non-exclusive, revocable, non-assignable and non-transferable right and license to use the Platform in order to view Content on the Website.</p>
+
+<p>In addition, if you register to use the Platform, and subject to your strict compliance with these Terms of Use, The Odin Project grants you a limited, personal, non-exclusive, revocable, non-assignable and non-transferable right and license to:</p>
+
+<p>(i) submit, upload or post Content to the Platform strictly as permitted in accordance with these Terms of Use and any other applicable terms posted on the Website from time to time;</p>
+
+<p>(ii) participate in the community areas and communicate with other members of the The Odin Project community strictly in accordance with these Terms of Use; and</p>
+
+<p>(iii) use other Services provided as part of the Platform strictly as permitted in accordance with these Terms of Use and any other terms applicable to those Services from time to time.</p>
+
+<p>The above licenses are conditional upon your strict compliance with these Terms, including, without limitation, the following:</p>
+
+<p>(i) You must not adapt, copy, republish, make available or otherwise communicate to the public, display, perform, transfer, share, distribute or otherwise use or exploit any Content on or from the Platform, except (i) where such Content is Your Content, or (ii) as permitted under these Terms of Use, and within the parameters displayed alongside that Content (for example, under the terms of Creative Commons licenses).</p>
+
+<p>(ii) You must not employ scraping or similar techniques to aggregate, repurpose, republish or otherwise make use of any Content.</p>
+
+<p>(iii) You must not alter or remove, attempt to alter or remove, any trademark, copyright or other proprietary or legal notices contained in, or appearing on, the Platform or any Content appearing on the Platform (other than Your Content).</p>
+
+<p>(iv) You must not use the Platform to upload, post, store, transmit, display, copy, distribute, promote, make available or otherwise communicate to the public:</p>
+
+<p>any Content that is offensive, abusive, libelous, defamatory, obscene, racist, sexually explicit, ethnically or culturally offensive, indecent, that promotes violence, terrorism, or illegal acts, incites hatred on grounds of race, gender, religion or sexual orientation, or is otherwise objectionable in The Odin Project’s reasonable discretion;</p>
+
+<p>any information, Content or other material that violates, plagiarizes, misappropriates or infringes the rights of third parties including, without limitation, copyright, trademark rights, rights of privacy or publicity, confidential information or any other right; or</p>
+
+<p>any Content that violates, breaches or is contrary to any law, rule, regulation, court order or is otherwise is illegal or unlawful in The Odin Project’s reasonable opinion;</p>
+
+<p>any material of any kind that contains any virus, Trojan horse, spyware, adware, malware, bot, time bomb, worm, or other harmful or malicious component, which or might overburden, impair or disrupt the Platform or servers or networks forming part of, or connected to, the Platform, or which does or might restrict or inhibit any other user’s use and enjoyment of the Platform; or
+any unsolicited or unauthorized advertising, promotional messages, spam or any other form of solicitation.</p>
+
+<p>(v) You must not commit or engage in, or encourage, induce, solicit or promote, any conduct that would constitute a criminal offence, give rise to civil liability or otherwise violate any law or regulation.</p>
+
+<p>(vi) You must not rent, sell or lease access to the Platform, or any Content on the Platform (except as dictated by the specific terms of that Content), without prior written agreement from The Odin Project.</p>
+
+<p>(vii) You must not deliberately impersonate any person or entity or otherwise misrepresent your affiliation with a person or entity, for example, by registering an account in the name of another person or company, or sending messages or making comments using the name of another person.</p>
+
+<p>(viii) You must not stalk, exploit, threaten, abuse or otherwise harass another user, or any The Odin Project employee.</p>
+
+<p>(ix) You must not use or attempt to use another person’s account, password, or other information, unless you have express permission from that other person.</p>
+
+<p>(x) You must not sell or transfer, or offer to sell or transfer, any The Odin Project account to any third party without the prior written approval of The Odin Project.</p>
+
+<p>(xi) You must not collect or attempt to collect personal data, or any other kind of information about other users, including without limitation, through spidering or any form of scraping.</p>
+
+<p>(xii) You must not violate, circumvent or attempt to violate or circumvent any data security measures employed by The Odin Project; access or attempt to access data or materials which are not intended for your use; log into, or attempt to log into, a server or account which you are not authorized to access; attempt to scan or test the vulnerability of The Odin Project’s servers, system or network or attempt to breach The Odin Project’s data security or authentication procedures; attempt to interfere with the Website or the Services by any means including, without limitation, hacking The Odin Project’s servers or systems, submitting a virus, overloading, mail-bombing or crashing. Without limitation to any other rights or remedies of The Odin Project under these Terms of Use, The Odin Project reserves the right to investigate any situation that appears to involve any of the above, and may report such matters to, and co-operate with, appropriate law enforcement authorities in prosecuting any users who have participated in any such violations.</p>
+
+<p>You agree to comply with the above conditions, and acknowledge and agree that The Odin Project has the right, in its sole discretion, to terminate your account or take such other action as we see fit if you breach any of the above conditions or any of the other terms of these Terms of Use. This may include taking court action and/or reporting offending users to the relevant authorities.</p>
+
+<h3 id="reporting-infringements">Reporting Infringements</h3>
+
+<p>If you discover any Content on the Platform that you believe infringes your copyright, please report this to us using any of the methods outlined on our Contact Page (http://theodinproject.com/contact).</p>
+
+<p>Please make sure that you include the following information:</p>
+
+<p>a statement that you have identified Content on The Odin Project that infringes your copyright or the copyright of a third party on whose behalf you are entitled to act;a description of the copyright work(s) that you claim have been infringed;</p>
+
+<p>a description of the Content that you claim is infringing and the The Odin Project URL(s) where such Content can be located;</p>
+
+<p>your full name, address and telephone number, a valid email address on which you can be contacted, and your The Odin Project user name if you have one;</p>
+
+<p>a statement by you that you have a good faith belief that the disputed use of the material is not authorized by the copyright owner, its agent, or the law; and</p>
+
+<p>a statement by you that the information in your notice is accurate and that you are authorized to act on behalf of the owner of the exclusive right that is allegedly infringed;</p>
+
+<p>In addition, if you wish for your notice to be considered as a notice pursuant to the United States Digital Millennium Copyright Act 17 U.S.C. §512(c), please also include the following:</p>
+
+<p>with respect to your statement that you are authorized to act on behalf of the owner of the exclusive right that is allegedly infringed, confirmation that such statement is made under penalty of perjury; and</p>
+
+<p>your electronic or physical signature (which may be a scanned copy).</p>
+
+<p>In all other cases, if you discover Content that infringes any or violates any of your other rights, which you believe is defamatory, pornographic, obscene, racist or otherwise liable to cause widespread offence, or which constitutes impersonation, harassment, spam or otherwise violates these Terms of Use, our Community Guidelines or applicable law, please report this to us at theodinprojectcontact@gmail.com.</p>
+
+<h3 id="third-party-websites-and-services">Third Party Websites and Services</h3>
+
+<p>The Platform may provide you with access to third party websites, databases, networks, servers, information, software, programs, systems, directories, applications, products or services, including without limitation, Linked Services (hereinafter “External Services”).</p>
+
+<p>The Odin Project does not have or maintain any control over External Services, and is not and cannot be responsible for their content, operation or use. By linking or otherwise providing access to any External Services, The Odin Project does not give any representation, warranty or endorsement, express or implied, with respect to the legality, accuracy, quality or authenticity of content, information or services provided by such External Services.</p>
+
+<p>External Services may have their own terms of use and/or privacy policy, and may have different practices and requirements to those operated by The Odin Project with respect to the Platform. You are solely responsible for reviewing any terms of use, privacy policy or other terms governing your use of these External Services, which you use at your own risk. You are advised to make reasonable enquiries and investigations before entering into any transaction, financial or otherwise, and whether online or offline, with any third party related to any External Services.</p>
+
+<p>You are solely responsible for taking the precautions necessary to protect yourself from fraud when using External Services, and to protect your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content and material that may be included on or may emanate from any External Services.</p>
+
+<p>The Odin Project disclaims any and all responsibility or liability for any harm resulting from your use of External Services, and you hereby irrevocably waive any claim against The Odin Project with respect to the content or operation of any External Services.</p>
+
+<h3 id="blocking-and-removal-of-content">Blocking and Removal of Content</h3>
+
+<p>Notwithstanding the fact that The Odin Project has no legal obligation to monitor the Content on the Platform, The Odin Project reserves the right to block, remove or delete any Content at any time, and to limit or restrict access to any Content, for any reason and without liability, including without limitation, if we have reason to believe that such Content does or might infringe the rights of any third party, has been uploaded or posted in breach of these Terms of Use, our Community Guidelines or applicable law, or is otherwise unacceptable to The Odin Project.</p>
+
+<h3 id="repeat-infringers">Repeat Infringers</h3>
+
+<p>The Odin Project will suspend or terminate your access to the Platform if The Odin Project determines, in its reasonable discretion, that you have repeatedly breached these Terms of Use.</p>
+
+<p>We will also suspend or terminate your account without warning if ordered to do so by a court, and/or in other appropriate circumstances, as determined by The Odin Project at its discretion.</p>
+
+<h3 id="disclaimer">Disclaimer</h3>
+
+<p>THE PLATFORM, INCLUDING, WITHOUT LIMITATION, THE WEBSITE AND ALL CONTENT AND SERVICES ACCESSED THROUGH OR VIA THE WEBSITE, THE APPS OR OTHERWISE, ARE PROVIDED “AS IS”, “AS AVAILABLE”, AND “WITH ALL FAULTS”.
+WHILST THE ODIN PROJECT USES REASONABLE ENDEAVOURS TO CORRECT ANY ERRORS OR OMISSIONS IN THE PLATFORM AS SOON AS PRACTICABLE ONCE THEY HAVE BEEN BROUGHT TO THE ODIN PROJECT’S ATTENTION, THE ODIN PROJECT MAKES NO PROMISES, GUARANTEES, REPRESENTATIONS OR WARRANTIES OF ANY KIND WHATSOEVER (EXPRESS OR IMPLIED) REGARDING THE WEBSITE, THE SERVICES OR ANY PART OR PARTS THEREOF, ANY CONTENT, OR ANY LINKED SERVICES OR OTHER EXTERNAL SERVICES. THE ODIN PROJECT DOES NOT WARRANT THAT YOUR USE OF THE PLATFORM WILL BE UNINTERRUPTED, TIMELY, SECURE OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE PLATFORM OR ANY PART OR PARTS THEREOF, THE CONTENT, OR THE SERVERS ON WHICH THE PLATFORM OPERATES ARE OR WILL BE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. THE ODIN PROJECT DOES NOT WARRANT THAT ANY TRANSMISSION OF CONTENT UPLOADED TO THE PLATFORM WILL BE SECURE OR THAT ANY ELEMENTS OF THE PLATFORM DESIGNED TO PREVENT UNAUTHORISED ACCESS, SHARING OR DOWNLOAD OF CONTENT WILL BE EFFECTIVE IN ANY AND ALL CASES, AND DOES NOT WARRANT THAT YOUR USE OF THE PLATFORM IS LAWFUL IN ANY PARTICULAR JURISDICTION.</p>
+
+<p>THE ODIN PROJECT AND ITS SUBSIDIARIES, AFFILIATES, SUCCESSORS, AND ASSIGNS, AND THEIR RESPECTIVE EMPLOYEES, AGENTS, DIRECTORS, OFFICERS AND SHAREHOLDERS, SPECIFICALLY DISCLAIM ALL OF THE FOREGOING WARRANTIES AND ANY OTHER WARRANTIES NOT EXPRESSLY SET OUT HEREIN TO THE FULLEST EXTENT PERMITTED BY LAW, INCLUDING WITHOUT LIMITATION ANY EXPRESS OR IMPLIED WARRANTIES REGARDING NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+<p>WHERE THE LAW OF ANY JURISDICTION LIMITS OR PROHIBITS THE DISCLAIMER OF IMPLIED OR OTHER WARRANTIES AS SET OUT ABOVE, THE ABOVE DISCLAIMERS SHALL NOT APPLY TO THE EXTENT THAT THE LAW OF SUCH JURISDICTION APPLIES TO THIS AGREEMENT.</p>
+
+<h3 id="limitation-of-liability">Limitation of Liability</h3>
+
+<p>IN NO EVENT SHALL THE ODIN PROJECT’S AGGREGATE LIABILITY TO YOU UNDER THIS AGREEMENT EXCEED THE GREATER OF 1 DOLLAR OR THE AMOUNTS (IF ANY) PAID BY YOU TO THE ODIN PROJECT DURING THE PREVIOUS TWELVE (12) MONTHS FOR THE SERVICES GIVING RISE TO THE CLAIM.</p>
+
+<p>THE ODIN PROJECT AND ITS SUBSIDIARIES, AFFILIATES, SUCCESSORS, AND ASSIGNS, AND THEIR RESPECTIVE EMPLOYEES, AGENTS, DIRECTORS, OFFICERS AND SHAREHOLDERS, SHALL HAVE NO LIABILITY FOR:</p>
+
+<p>ANY LOSS OR DAMAGE ARISING FROM:</p>
+
+<p>(A) YOUR INABILITY TO ACCESS OR USE THE PLATFORM OR ANY PART OR PARTS THEREOF, OR TO ACCESS ANY CONTENT OR ANY EXTERNAL SERVICES VIA THE PLATFORM;</p>
+
+<p>(B) ANY CHANGES THAT THE ODIN PROJECT MAY MAKE TO THE PLATFORM OR ANY PART THEREOF, OR ANY TEMPORARY OR PERMANENT SUSPENSION OR CESSATION OF ACCESS TO THE PLATFORM OR ANY CONTENT IN OR FROM ANY OR ALL TERRITORIES;</p>
+
+<p>(C) ANY ACTION TAKEN AGAINST YOU BY THIRD PARTY RIGHTSHOLDERS WITH RESPECT TO ANY ALLEGED INFRINGEMENT OF SUCH THIRD PARTY’S RIGHTS RELATING TO YOUR CONTENT OR YOUR USE OF THE PLATFORM, OR ANY ACTION TAKEN AS PART OF AN INVESTIGATION BY THE ODIN PROJECT OR ANY RELEVANT LAW ENFORCEMENT AUTHORITY REGARDING YOUR USE OF THE PLATFORM;</p>
+
+<p>(D) ANY ERRORS OR OMISSIONS IN THE PLATFORM’S TECHNICAL OPERATION, OR FROM ANY INACCURACY OR DEFECT IN ANY CONTENT OR ANY INFORMATION RELATING TO CONTENT;</p>
+
+<p>(E) YOUR FAILURE TO PROVIDE THE ODIN PROJECT WITH ACCURATE OR COMPLETE INFORMATION, OR YOUR FAILURE TO KEEP YOUR USERNAME OR PASSWORD SUITABLY CONFIDENTIAL;
+ANY LOSS OR DAMAGE TO ANY COMPUTER HARDWARE OR SOFTWARE, ANY LOSS OF DATA (INCLUDING YOUR CONTENT), OR ANY LOSS OR DAMAGE FROM ANY SECURITY BREACH; AND/OR
+ANY LOSS OF PROFITS, OR ANY LOSS YOU SUFFER WHICH IS NOT A FORESEEABLE CONSEQUENCE OF THE ODIN PROJECT BREACHING THESE TERMS OF USE. LOSSES ARE FORESEEABLE WHERE THEY COULD BE CONTEMPLATED BY YOU AND THE ODIN PROJECT AT THE TIME YOU AGREE TO THESE TERMS OF USE, AND THEREFORE DO NOT INCLUDE ANY INDIRECT LOSSES, SUCH AS LOSS OF OPPORTUNITY.</p>
+
+<p>ANY CLAIM OR CAUSE OF ACTION ARISING OUT OF OR RELATED TO YOUR USE OF THE PLATFORM MUST BE NOTIFIED TO THE ODIN PROJECT AS SOON AS POSSIBLE.</p>
+
+<p>APPLICABLE LAW MAY NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATIONS OR EXCLUSIONS MAY NOT APPLY TO YOU. IN SUCH CASES, YOU ACKNOWLEDGE AND AGREE THAT SUCH LIMITATIONS AND EXCLUSIONS REFLECT A REASONABLE AND FAIR ALLOCATION OF RISK BETWEEN YOU AND THE ODIN PROJECT AND ARE FUNDAMENTAL ELEMENTS OF THE BARGAIN BETWEEN YOU AND THE ODIN PROJECT, AND THAT THE ODIN PROJECT’S LIABILITY WILL BE LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+NOTHING IN THESE TERMS OF USE LIMITS OR EXCLUDES THE LIABILITY OF THE ODIN PROJECT, ITS SUBSIDIARIES, SUCCESSORS, ASSIGNS, OR THEIR RESPECTIVE EMPLOYEES, AGENTS, DIRECTORS, OFFICERS AND/OR SHAREHOLDERS: (I) FOR ANY DEATH OR PERSONAL INJURY CAUSED BY ITS OR THEIR NEGLIGENCE, (II) FOR ANY FORM OF FRAUD OR DECEIT, (III) FOR ANY DAMAGES CAUSED WILFULLY OR BY GROSS NEGLIGENCE, OR (IV) FOR ANY FORM OF LIABILITY WHICH CANNOT BE LIMITED OR EXCLUDED BY LAW.</p>
+
+<h3 id="indemnification">Indemnification</h3>
+
+<p>You hereby agree to indemnify, defend and hold harmless The Odin Project, its successors, assigns, affiliates, agents, directors, officers, employees and shareholders from and against any and all claims, obligations, damages, losses, expenses, and costs, including reasonable attorneys’ fees, resulting from:</p>
+
+<p>(i) any violation by you of these Terms of Use;</p>
+
+<p>(ii) any third party claim of infringement of copyright or other intellectual property rights or invasion of privacy arising from the hosting of Your Content on the Platform, and/or your making available thereof to other users of the Platform, and/or the actual use of Your Content by other users of the Platform or Linked Services in accordance with these Terms of Use and the parameters set by you with respect to the distribution and sharing of Your Content;</p>
+
+<p>(iii) any activity related to your account, be it by you or by any other person accessing your account with or without your consent unless such activity was caused by the act or default of The Odin Project.</p>
+
+<h3 id="data-protection-privacy-and-cookies">Data Protection, Privacy, and Cookies</h3>
+
+<p>In common with most online services, we use cookies to help us understand how people are using the Platform, so that we can continue to improve the service we offer.</p>
+
+<h3 id="meetups-and-study-groups">Meetups and Study Groups</h3>
+
+<p>The Odin Project has an active community of users, many of whom organize and attend face-to-face meetings both virtually and at venues all over the world (“Meetups” or “Study Groups”). While The Odin Project is generally supportive of Meetups and may provide branded promotional materials to help organizers promote their Meetups, The Odin Project does not sponsor, oversee or in any way control such Meetups. You hereby acknowledge and agree that your attendance and participation in any Meetups is entirely at your own risk and The Odin Project does not bear any responsibility or liability for the actions of any The Odin Project users or any third parties who organize, attend or are otherwise involved in any Meetups.</p>
+
+<h3 id="competitions-and-other-promotions">Competitions and Other Promotions</h3>
+
+<p>From time to time, some The Odin Project users may promote competitions, promotions, prize draws and other similar opportunities on the Platform (“Third Party Competitions”). The Odin Project is not the sponsor or promoter of these Third Party Competitions, and does not bear any responsibility or liability for the actions or inactions of any third parties who organize, administer or are otherwise involved in any of promotion of these Third Party Competitions. If you wish to participate in any of these Third Party Competitions, it is your responsibility to read the terms and conditions applicable to the relevant Third Party Competition and to ensure that you understand the rules and any eligibility requirements, and are lawfully able to participate in such Third Party Competitions in your country of residence.</p>
+
+<h3 id="employment-and-salary-waiver">Employment and Salary Waiver</h3>
+
+<p>You agree that in no way does your use of this site imply that you will be able to find a job or that you should find a job.  This site does NOT guarantee you a job based on using the information contained within.  All salary information provided is purely for information purposes and your own case may vary widely.</p>
+
+<h3 id="changes-to-the-platform-and-accounts">Changes to the Platform and Accounts</h3>
+
+<p>The Odin Project reserves the right at any time and for any reason to suspend, discontinue, terminate or cease providing access to the Platform or any part thereof, temporarily or permanently, and whether in its entirety or with respect to individual territories only. In the case of any temporary or permanent suspension, discontinuation, termination or cessation of access, The Odin Project shall use its reasonable endeavors to notify registered users of such decision in advance.</p>
+
+<p>You hereby agree that The Odin Project and its subsidiaries, affiliates, successors, assigns, employees, agents, directors, officers and shareholders shall not be liable to you or to any third party for any changes or modifications to the Website and/or any Services that The Odin Project may wish to make from time to time, or for any decision to suspend, discontinue or terminate the Website, the Services or any part or parts thereof, or your possibility to use or access the same from or within any territory or territories.</p>
+
+<p>The Odin Project may change the features of any type of account, may withdraw or, or introduce new features, products or types of account at any time and for any reason, from time to time.</p>
+
+<h3 id="termination">Termination</h3>
+
+<p>You may terminate this Agreement at any time by sending notice to theodinprojectcontact@gmail.com confirming such termination, by removing all of Your Content from your account, by deleting your account and thereafter by ceasing to use the Platform.</p>
+
+<p>The Odin Project may suspend your access to the Platform and/or terminate this Agreement at any time if (i) you are deemed to be a Repeat Infringer as described above; (ii) you are in breach of any of the material provision of these Terms of Use; (iii) The Odin Project elects at its discretion to cease providing access to the Platform in the jurisdiction where you reside or from where you are attempting to access the Platform, or (iv) in other reasonable circumstances as determined by The Odin Project at its discretion.</p>
+
+<p>Once your account has been terminated, all Content residing in your account or pertaining to activity from your account will be irretrievably deleted by The Odin Project, except to the extent that we are obliged or permitted to retain such content, data or information for a certain period of time in accordance with applicable laws and regulations and/or to protect our legitimate business interests. You are advised to save or back up any material that you have uploaded to your account before terminating your account, as The Odin Project assumes no liability for any material that is irretrievably deleted following any termination of your account. The Odin Project is not able to provide you with any .csv or other similar file of data relating to activity associated with your account, whether before or after termination or cancellation. This data is provided and is accessible only for viewing via your account page on the Website for as long as your account is active.</p>
+
+<p>If you wish to delete your account, you will need to do so from the Account page within your Settings on the Website.</p>
+
+<h3 id="assignment-to-third-parties">Assignment to Third Parties</h3>
+
+<p>The Odin Project may assign its rights and (where permissible by law) its obligations under this Agreement, in whole or in part, to any third party at any time without notice, including without limitation, to any person or entity acquiring all or substantially all of the assets or business of The Odin Project. You may not assign this Agreement or the rights and duties hereunder, in whole or in part, to any third party without the prior written consent of The Odin Project.</p>
+
+<h3 id="severability">Severability</h3>
+
+<p>Should one or more provisions of these Terms of Use be found to be unlawful, void or unenforceable, such provision(s) shall be deemed severable and will not affect the validity and/or enforceability of the remaining provisions of the Terms of Use, which will remain in full force and effect.</p>
+
+<h3 id="entire-agreement">Entire Agreement</h3>
+
+<p>These Terms of Use constitute the entire agreement between you and The Odin Project with respect to your use of the Platform (other than any use of The Odin Project’s APIs which may also be subject to separate API Terms of Use), and supersede any prior agreement between you and The Odin Project. Any modifications to this Agreement must be made in writing.</p>
+
+<h3 id="third-party-rights">Third Party Rights</h3>
+
+<p>These Terms of Use are not intended to give rights to anyone except you and The Odin Project. This does not affect our right to transfer our rights or obligations to a third party as described in the Assignment to Third Parties section.</p>
+
+<h3 id="jurisdiction">Jurisdiction</h3>
+
+<p>Any claim or dispute between you and us arising out of or relating to this user agreement, in whole or in part, shall be governed by the laws of the State of California without respect to its conflict of laws provisions. We agree and you agree to submit to the personal jurisdiction and venue of the state and federal court located in San Francisco County, California.</p>
+
+<h3 id="no-agency">No Agency</h3>
+
+<p>No agency, partnership, joint venture, employee-employer, or franchiser-franchisee relationship is intended or created by this User Agreement.</p>
+
+<h3 id="third-party-links">Third-party links</h3>
+
+<p>The Odin Project is a place with many third-party hyperlinks posted by users like you. We are not responsible for the content or actions of any third party websites or services associated with posted links. You agree to take sole legal responsibility for any links you submit, and this agreement does not apply to any content on other websites related to those links. You should consult the terms and privacy policies of those other websites to understand your rights.</p>
+
+<h3 id="access-and-interface">Access and Interface</h3>
+
+<p>Information on The Platform is subject to constant updates and changes.  You agree that you will not use any robot, spider, scraper, or other automated means to access our sites for any purpose without our express handwritten permission.</p>
+
+<p>Additionally, you agree that you will not:
+Take any action that imposes or may impose (to be determined in our sole discretion) an unreasonable or disproportionately large load on our infrastructure; or
+Interfere or attempt to interfere with the proper working of our sites, services, or tools, or any activities conducted on or with our sites, services, or tools.</p>
+
+<h3 id="no-waiver">No Waiver</h3>
+
+<p>If we fail to enforce any of this User Agreement, it will not be considered a waiver. Unless otherwise replaced by an updated User Agreement, any amendment or waiver of this User Agreement must be in writing and signed by us.</p>
+
+<h3 id="no-transfer">No Transfer</h3>
+
+<p>You will not transfer any of your rights or obligations under this User Agreement to anyone else without our consent.</p>
+
+<h3 id="legal-compliance">Legal Compliance</h3>
+
+<p>Nothing in this User Agreement shall prevent us from complying with the law.</p>
+
+<h3 id="no-beneficiary">No Beneficiary</h3>
+
+<p>This User Agreement does not confer any third-party beneficiary rights.</p>
+
+<h3 id="reservation-of-rights">Reservation of Rights</h3>
+
+<p>We reserve all rights not expressly granted to you.</p>
+
+<h3 id="headings">Headings</h3>
+
+<p>The headings in this User Agreement are inserted only as a matter of convenience and for reference and in no way define, limit or describe the scope or intent of this User Agreement.</p>
+
+    </div>
+  </div>
+</div>
+
+
+    <footer>
+  <div class="max-w-7xl px-4 sm:px-6 lg:px-8 py-3 mx-auto">
+    <div class="flex justify-center lg:justify-between py-5">
+      <div class="w-80">
+        <div class='flex-shrink-0 hidden lg:block items-center'>
+          <a href="index.html">
+  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="ar0navbfpws7041z71qk9owigxezh4t" class="block h-15 w-auto text-gray-800"><title id="ar0navbfpws7041z71qk9owigxezh4t">Odin Logo</title>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
+<ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535"></ellipse>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.446 25.7092C19.446 25.2752 19.0891 24.9233 18.6493 24.9233C17.638 24.9233 15.9034 24.9233 14.8922 24.9233C14.4523 24.9233 14.0955 25.2752 14.0955 25.7092C14.0955 26.3856 14.0955 27.3716 14.0955 28.1426C14.0955 28.7935 14.6305 29.3212 15.2902 29.3212C15.6995 29.3212 16.1763 29.3212 16.6578 29.3212C17.3973 29.3212 18.1062 29.0314 18.6295 28.5155C19.1522 28.0001 19.446 27.3004 19.446 26.5712C19.446 26.2585 19.446 25.9621 19.446 25.7092Z" fill="#A78347"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0004 4.5308L43.8517 0L39.0002 18L35.0002 22L35.0004 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.8514 4.5308L0.000132561 0L4.85156 18L8.85156 22L8.8514 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.442 12.7438C35.442 12.7438 28.7539 8.34589 22.0657 8.34589C15.3776 8.34589 8.68945 12.7438 8.68945 12.7438V25.9373L10.473 29.4556C11.7527 24.5929 17.5445 22.5672 21.576 25.5723L22.0657 25.9373L22.5554 25.5723C26.587 22.5672 32.3788 24.5929 33.6585 29.4556L35.442 25.9373V12.7438Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6068 32.5341L14.0398 53.2041L9.12134 49.6858L13.148 34.7331L17.6068 32.5341Z" fill="#D4D4D4"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5243 32.5341L30.0913 53.2041L35.0098 49.6858L30.9831 34.7331L26.5243 32.5341Z" fill="#D5D5D5"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68933 25.9373L5.12231 39.1309L9.58108 47.9267L13.1481 34.7331L8.68933 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4418 25.9373L39.0088 39.1309L34.55 47.9267L30.983 34.7331L35.4418 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6069 32.5341L13.594 54.0837L22.0656 58.4815L30.5373 54.0837L26.5244 32.5341L22.3983 30.4992L22.0656 30.3352L17.6069 32.5341Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6636 33.4137H20.5425C20.5425 33.4137 20.5425 33.9348 20.5425 34.514C20.5425 34.9222 20.707 35.3131 20.9995 35.6016C21.292 35.8901 21.6884 36.0524 22.1022 36.0524C22.1026 36.0524 22.1035 36.0524 22.1039 36.0524C22.5177 36.0524 22.9141 35.8901 23.2066 35.6016C23.4991 35.3131 23.6636 34.9222 23.6636 34.514C23.6636 33.9348 23.6636 33.4137 23.6636 33.4137Z" fill="#353535"></path>
+<path d="M68.808 20.384L67.704 20.456C67.368 20.456 67.056 20.456 66.696 20.432C66.504 20.432 66.288 20.6 66.144 20.6L65.688 20.408L63.36 20.288L63.288 22.256L63.576 22.544L65.04 22.496C65.112 22.496 65.256 22.472 65.424 22.424L65.544 22.304L66.072 22.376L66.216 23.36L66.12 24.896L66.264 26.024L66.144 30.92L66.024 34.304L66.24 34.544L65.88 36.056V37.904L67.152 38.096L67.824 37.976L68.52 37.592L68.328 35.888V31.376L68.04 30.92L68.064 30.896L68.28 29.456L68.256 27.608V27.2C68.256 27.032 68.232 26.816 68.232 26.624C68.208 26.48 68.208 25.88 68.208 25.664L68.256 23.888L68.16 23.36L68.304 22.352H69.048L69.768 22.4L70.008 22.472H71.088L71.16 21.344L71.016 20.336L68.808 20.384ZM73.2638 33.992L73.3118 35.504L73.6478 35.864L73.2638 36.32L73.1918 37.928L74.7038 38.072L75.6878 38.024L75.7118 37.136L75.6398 36.056L75.4958 34.784L75.5198 34.712L75.6398 30.536L77.5118 29.744H77.5358L78.9278 29.432L78.9038 29.864L78.9758 30.2L78.9278 33.896L79.2878 34.28L79.0478 34.496L78.8798 37.184L79.1918 38.024H80.5838L81.4718 37.976L81.4238 36.656L81.2558 36.056L81.2078 32.984L81.1598 28.688L81.1118 28.208L81.0398 27.128L81.1598 24.872L80.9438 24.176L81.1838 23.864L81.2078 22.952V22.976L81.3518 21.608L81.4238 20.408L80.0558 20.36L79.1678 20.336L78.8078 21.032L78.9278 21.992L78.9758 24.152L79.0478 26.336L78.9518 26.984L78.6878 27.104L78.2318 27.32L77.2478 27.752L77.0318 28.016L76.6478 27.872L75.6398 28.232L75.5918 28.256L75.3758 25.928L75.4718 24.344L75.2078 24.128L75.4958 23.672L75.6158 22.208L75.7118 20.48L73.6478 20.216L73.0718 20.6L73.2398 22.088L73.1678 22.568L73.2398 24.152L73.4078 25.64L73.3118 27.992L73.4798 30.704L73.2638 33.992ZM90.8258 22.616L90.8738 21.272L90.8498 20.336L88.4738 20.36L87.5378 20.552L87.2018 20.36H85.8338L84.7058 20.504L84.8258 22.208L85.0898 22.52L84.8258 22.928L84.8498 24.152L84.8258 26.024V27.8L84.7538 28.688L84.9458 31.064L84.8498 31.256L84.8738 32.552V33.104L85.0898 33.392L84.8018 34.016L84.7778 35.12L84.8018 35.384L84.6578 37.016L84.7778 38L86.5778 38.024L86.7698 37.904H87.6098L88.9778 38.048L90.5618 38.072L91.1138 37.832L91.2098 36.944L91.2578 35.744L90.0578 35.72L89.4578 35.912L87.5378 35.936L87.3458 35.888L87.1298 35.84L87.0818 33.512L87.0578 33.464L87.1298 33.248L86.9858 32.552L87.0818 30.08H87.4658L88.9778 30.128L90.1538 30.176L90.2018 29.192L90.3458 28.472L90.0338 27.872L88.8098 27.992L87.8738 28.04L86.9858 27.992L86.9378 27.056L86.6978 26.864L86.9618 26.432L87.0818 25.712V23.336L87.1298 22.736V22.472H87.3458L88.6658 22.52L89.0498 22.448L89.1218 22.424L89.6978 22.616H90.8258ZM102.331 20.312L102.115 20.336H101.227L101.179 20.504L101.035 21.224L100.939 21.368L99.6429 24.608L99.7629 24.872L99.3309 25.184L98.0349 28.328L97.8429 28.448L97.8909 29.96L98.4669 31.184L99.3309 33.224L100.051 34.712H100.315L100.243 35.12L101.083 37.208L101.107 38L103.291 38.024L103.339 37.76L103.627 36.992L104.923 33.92L105.475 32.768L105.499 32.384L105.691 32.144L106.867 29.768L106.939 28.448L106.123 26.672L105.475 25.232H105.235L105.115 24.584L103.891 21.584L103.411 20.264L102.331 20.312ZM102.379 34.952L101.323 32.192L100.843 31.208L100.363 30.872L100.603 30.584L100.387 29.888L100.075 29.096L100.051 28.808L100.843 26.744L100.675 26.36L101.011 26.264L102.331 22.784L102.475 23.24L103.027 24.704L103.459 24.968L103.243 25.256L104.179 27.68L104.467 28.496L104.659 29.096L103.483 31.976L103.507 32.408H103.531L103.243 32.696L102.475 35.216L102.379 34.952ZM113.227 35.72L114.067 34.016L116.539 30.224L116.971 29.504L116.947 27.752L116.515 27.2L116.539 27.248L114.715 24.824L114.091 23.72L113.251 22.88L112.987 22.088L111.499 20.048L110.227 20.432L109.195 20.744L109.219 21.632L109.291 22.88L109.531 23.192L109.291 23.648L109.315 29.936L109.459 30.872L109.315 36.248V36.224L109.267 37.832L110.827 38.048L111.619 38.264L113.227 35.72ZM111.451 26.744L111.379 23.264L111.523 23.432L113.899 27.248L114.379 27.632L114.475 28.208L114.907 28.856L114.475 29.552L113.683 30.872L112.675 32.816L112.867 33.032L112.435 33.248L111.379 34.952L111.355 35L111.379 33.704L111.475 28.952L111.091 27.824L111.451 26.744ZM119.431 27.56L119.359 28.88L119.287 29.624V34.112V34.976L119.575 35.384L119.287 35.864L118.951 38L120.055 38.024L120.559 38.048L121.615 37.712L121.639 36.824L121.591 36.368L121.543 36.008V29.36L121.279 29.192L121.495 28.688L121.447 28.088L121.351 27.152L121.423 25.928L121.495 22.784L121.615 22.184L121.735 20.432L120.175 20.336L119.047 20.408L119.167 21.608L119.383 21.728L119.191 22.16L119.263 26.96L119.431 27.56ZM133.115 35.888V35.12L132.947 29.864L132.683 29.072L132.875 28.064L133.115 22.16L133.163 20.528L132.179 20.36L130.787 20.384V22.304L131.027 22.64L130.787 23.384V25.448L129.995 24.152L129.803 24.056L129.203 23.096L127.043 20.12L125.147 20.648V21.896L125.243 24.392L125.339 25.76L125.243 30.752L125.459 31.232L125.267 31.928L125.123 35.336V35.744L125.195 35.96L125.027 37.88L126.059 38.072L127.475 38.024L127.523 36.488L127.451 36.152L127.475 33.656L127.259 32.744L127.379 31.88L127.427 26.408L127.139 26.096L127.115 26.048L127.451 25.184V23.888L128.075 24.752L129.059 26.12L129.755 26.96L130.091 27.488L130.427 27.848L130.811 28.496L130.835 30.992L130.907 31.448L130.835 31.568L130.811 33.872L130.835 36.152L130.811 38.024L131.627 38.072L132.947 38.048L133.259 37.232L133.115 35.888ZM147.393 28.76L148.161 28.016L148.905 27.104L148.953 25.448L146.457 22.808L145.953 22.64L145.857 22.232L143.697 20L142.929 20.288L141.777 20.792L141.825 22.4L141.945 23.384V27.32L141.897 27.44L141.873 33.44L142.161 33.752L141.945 34.496L141.681 37.928L143.073 38.072L144.273 38L144.129 35.024L143.745 34.688L144.129 34.112L144.081 32.456L144.297 32.216L145.905 30.392L147.393 28.76ZM144.105 27.128L143.841 26.648L144.081 25.904L144.057 24.752L144.081 23.048L145.473 24.608L145.689 24.752L145.857 25.088L146.889 26.24L146.505 26.792L146.265 27.392L146.001 27.32L144.801 28.736L144.105 29.48V27.128ZM153.466 30.608L154.426 32.552L154.642 33.104L155.53 34.784L155.818 34.928L155.794 35.336L156.634 37.256L157.21 38.192L159.154 37.112L159.178 36.416L158.386 35.576L157.954 34.664V34.688L157.618 33.992L157.474 33.92V33.608L156.514 31.976C156.346 31.736 156.202 31.616 156.01 31.4V30.992C155.866 30.704 155.578 30.296 155.41 29.96L156.082 29.048L156.49 28.544L157.258 27.632L158.362 26.288L158.53 24.848L157.378 23.792C157.354 23.792 156.97 23.912 156.946 23.888L156.802 23.288L152.986 19.976L151.09 20.744L151.186 22.808L151.306 27.392L151.114 27.872L151.162 29.12L151.258 31.928V32.864L151.474 33.176L151.114 34.112L150.97 37.928L152.554 38.072L153.514 37.688L153.49 35.696L153.418 35.48L153.346 33.08L153.322 30.464L153.466 30.608ZM153.37 28.352L153.274 26.216L153.226 25.952L153.178 25.808L153.082 25.376L153.274 24.92V24.68L153.322 22.832L155.53 25.016L155.698 25.136L156.178 25.736L155.914 26.072C155.602 26.504 155.026 27.248 154.69 27.656L153.49 29.144L153.322 29.24L153.37 28.352ZM164.323 20.312L164.107 20.336H163.219L163.171 20.504L163.027 21.224L162.931 21.368L161.635 24.608L161.755 24.872L161.323 25.184L160.027 28.328L159.835 28.448L159.883 29.96L160.459 31.184L161.323 33.224L162.043 34.712H162.307L162.235 35.12L163.075 37.208L163.099 38L165.283 38.024L165.331 37.76L165.619 36.992L166.915 33.92L167.467 32.768L167.491 32.384L167.683 32.144L168.859 29.768L168.931 28.448L168.115 26.672L167.467 25.232H167.227L167.107 24.584L165.883 21.584L165.403 20.264L164.323 20.312ZM164.371 34.952L163.315 32.192L162.835 31.208L162.355 30.872L162.595 30.584L162.379 29.888L162.067 29.096L162.043 28.808L162.835 26.744L162.667 26.36L163.003 26.264L164.323 22.784L164.467 23.24L165.019 24.704L165.451 24.968L165.235 25.256L166.171 27.68L166.459 28.496L166.651 29.096L165.475 31.976L165.499 32.408H165.523L165.235 32.696L164.467 35.216L164.371 34.952ZM171.71 27.608L171.59 28.928L171.614 30.416L171.638 30.752V31.688L171.542 34.304L171.59 34.52L171.23 35.024L170.174 35.72L169.118 36.152V37.4L170.438 38.384L172.214 36.944L172.19 36.464L172.838 36.368L173.606 35.696L173.99 35.024L173.702 30.896L173.51 30.176L173.774 29.984L173.678 23.288L173.966 21.176L173.654 20.336L171.374 20.384V21.728L171.806 21.968L171.494 22.352L171.566 26.408L171.71 27.608ZM183.502 22.616L183.55 21.272L183.526 20.336L181.15 20.36L180.214 20.552L179.878 20.36H178.51L177.382 20.504L177.502 22.208L177.766 22.52L177.502 22.928L177.526 24.152L177.502 26.024V27.8L177.43 28.688L177.622 31.064L177.526 31.256L177.55 32.552V33.104L177.766 33.392L177.478 34.016L177.454 35.12L177.478 35.384L177.334 37.016L177.454 38L179.254 38.024L179.446 37.904H180.286L181.654 38.048L183.238 38.072L183.79 37.832L183.886 36.944L183.934 35.744L182.734 35.72L182.134 35.912L180.214 35.936L180.022 35.888L179.806 35.84L179.758 33.512L179.734 33.464L179.806 33.248L179.662 32.552L179.758 30.08H180.142L181.654 30.128L182.83 30.176L182.878 29.192L183.022 28.472L182.71 27.872L181.486 27.992L180.55 28.04L179.662 27.992L179.614 27.056L179.374 26.864L179.638 26.432L179.758 25.712V23.336L179.806 22.736V22.472H180.022L181.342 22.52L181.726 22.448L181.798 22.424L182.374 22.616H183.502ZM185.362 30.896L186.226 32.456L187.33 33.488L187.138 33.92L188.962 36.752L189.01 37.04L189.826 38.312L190.642 37.784L191.89 36.752L191.338 35.864L190.09 34.232L188.986 32.36L188.098 30.992L187.882 30.512L187.546 30.176L187.306 29.72L186.946 29.024L187.258 28.448L187.714 27.632L188.506 26.384L189.946 24.248L190.066 23.6L190.474 23.336L191.146 22.4L191.818 21.2L190.018 20L189.178 20.984L189.154 21.176L187.81 23.384V23.48L187.21 24.44V25.016L186.346 25.856L184.786 28.496L184.81 30.032L185.362 30.896ZM198.12 20.384L197.016 20.456C196.68 20.456 196.368 20.456 196.008 20.432C195.816 20.432 195.6 20.6 195.456 20.6L195 20.408L192.672 20.288L192.6 22.256L192.888 22.544L194.352 22.496C194.424 22.496 194.568 22.472 194.736 22.424L194.856 22.304L195.384 22.376L195.528 23.36L195.432 24.896L195.576 26.024L195.456 30.92L195.336 34.304L195.552 34.544L195.192 36.056V37.904L196.464 38.096L197.136 37.976L197.832 37.592L197.64 35.888V31.376L197.352 30.92L197.376 30.896L197.592 29.456L197.568 27.608V27.2C197.568 27.032 197.544 26.816 197.544 26.624C197.52 26.48 197.52 25.88 197.52 25.664L197.568 23.888L197.472 23.36L197.616 22.352H198.36L199.08 22.4L199.32 22.472H200.4L200.472 21.344L200.328 20.336L198.12 20.384Z" fill="currentColor"></path>
+</svg>
+
+</a>
+        </div>
+
+        <p class="py-4 hidden lg:block">High quality coding education created by an Open-Source community.</p>
+
+        <div class="flex justify-between">
+          <a href="https://github.com/TheOdinProject"><span aria-label="github" class="text-gray-700 text-4xl hover:text-gray-900 fab fa-github odin-dark-icon"/></a>
+          <a href="https://discord.gg/V75WSQG"><span aria-label="discord chat" class="text-gray-700 text-4xl hover:text-gray-900 fab fa-discord odin-dark-icon"/></a>
+          <a href="https://www.facebook.com/theodinproject/"><span aria-label="facebook" class="text-gray-700 hover:text-gray-900 text-4xl fab fa-facebook odin-dark-icon"/></a>
+          <a href="https://twitter.com/TheOdinProject"><span aria-label="twitter" class="text-gray-700 hover:text-gray-900 text-4xl fab fa-twitter odin-dark-icon"/></a>
+        </div>
+      </div>
+
+        <div class="rounded-md px-8 pt-8 bg-gray-100 hidden lg:block odin-dark-bg-accent">
+    <h3 class="text-3xl font-bold pb-6">Start learning for free</h3>
+
+    <form action="https://www.theodinproject.com/sign_up" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <div class="p-1 flex rounded-md bg-white focus-within:ring-2 focus-within:ring-indigo-500 border border-gray-300">
+        <input placeholder="Email Address" required="required" class="w-60 p-2 focus:outline-none bg-white block rounded-none lg:w-80 lg:text-md rounded-l-md" type="email" name="email" />
+        <input type="submit" name="commit" value="Get Started!" class="rounded-md bg-odin-green-500  text-white px-6 py-2 text-lg hover:bg-odin-green-600 focus:outline-none focus:ring-1 focus:ring-indigo-500" data-disable-with="Get Started!" />
+      </div>
+</form>  </div>
+
+    </div>
+
+    <div class="flex flex-col-reverse justify-between lg:flex-row items-center lg:pb-4 gap-y-6">
+      <p class="text-gold-600 text-base odin-dark-text">
+        Web design by Ada Chiu
+      </p>
+
+      <div class="flex items-center space-x-0 gap-x-8 gap-y-3 flex-wrap justify-center md:block md:space-x-10 odin-dark-text">
+        <a class="hover:text-gray-500" href="about.html">About</a>
+        <a class="hover:text-gray-500" href="faq.html">FAQ</a>
+        <a target="_blank" rel="noreferrer" class="hover:text-gray-500" href="https://medium.com/the-odin-project">Blog</a>
+        <a class="hover:text-gray-500" href="success_stories.html">Success Stories</a>
+        <a class="hover:text-gray-400" href="contributing.html">Contribute</a>
+        <a class="hover:text-gray-500" href="lessons/installation_lessons.html">Appendix</a>
+        <a class="hover:text-gray-500" href="terms_of_use.html">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <div class="floating-dropdown">
+  <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle='tooltip' data-placement='left' title='Chat'>
+    <a target="_blank" rel="noreferrer" class="chat-floating-btn" href="https://discord.gg/fbFCkYabZB">
+      <i class="fas fa-comment"></i>
+</a>  </div>
+  <div class="floating-dropdown__item main-floating-btn">
+    <i class="fas fa-comments" aria-hidden="true"></i>
+  </div>
+</div>
+
+    <!-- Google Analytics Tracking Snippet -->
+<!-- Only load it if we're in a production environment! -->
+  
+  
+
+  <script type="text/javascript">  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41005438-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+    
+    
+    <script type='text/javascript'>
+      window.SENTRY_DSN = "https://6cc08494f58c45d0b78be7b6bea5d0cc@o572484.ingest.sentry.io/5721923"
+      window.currentUserLoggedIn = "false"
+
+    </script>
+
+    <script src="packs/js/error_tracking-527441542f359cc2f938.js"></script>
+
+  </body>
+
+<!-- Mirrored from www.theodinproject.com/terms_of_use by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Mar 2022 12:45:16 GMT -->
+</html>
